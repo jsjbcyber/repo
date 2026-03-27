@@ -9,7 +9,7 @@
 Tenda W30EV2.0 V16.01.0.21 was found to contain a command injection vulnerability in the `formSetUSBPartitionUmount` function via the `usbPartitionName` parameter. This vulnerability allows attackers to execute arbitrary commands via a crafted request.
 
 Function `formSetUSBPartitionUmount`:
-![[Pasted image 20260328074735.png]]
+![repo_1.png](https://github.com/jsjbcyber/repo/blob/main/imgs/repo-21.png)
 
 **POC**
 
@@ -34,4 +34,4 @@ Connection: keep-alive
 ```
 
 Then, you will find that the character "pwned2!" has been written to the end of the "/webroot_ro/index.html" file.
-![[Pasted image 20260328074904.png]]
+![repo_2.png](https://github.com/jsjbcyber/repo/blob/main/imgs/repo-22.png)
