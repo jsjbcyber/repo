@@ -9,10 +9,10 @@
 Tenda W30EV2.0 V16.01.0.21 was found to contain a command injection vulnerability in the `do_ping_action` function via the `hostName` parameter. This vulnerability allows attackers to execute arbitrary commands via a crafted request.
 
 Function `do_ping_action`:
-![[Pasted image 20260328013838.png]]
+![[[Pasted image 20.png](https://github.com/jsjbcyber/repo/blob/main/imgs/1.png)]]
 
 Function `cmd_get_ping_output`:
-![[Pasted image 20260328013912.png]]
+![[[Pasted image 202.png](https://github.com/jsjbcyber/repo/blob/main/imgs/2.png)]]
 
 
 **POC**
@@ -36,4 +36,4 @@ Connection: keep-alive
 ```
 
 Then, you will find that the character "pwned!!!!" has been written to the end of the "/webroot_ro/index.html" file.
-![[Pasted image 20260328014154.png]]
+![[[Pasted image 2.png](https://github.com/jsjbcyber/repo/blob/main/imgs/3.png)]]
